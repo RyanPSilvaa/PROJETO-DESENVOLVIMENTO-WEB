@@ -1,9 +1,6 @@
 // Dados iniciais dos bares
 const bars = [
-    { name: "Bar do Zé", rating: 4, image: "images/bar1.jpg" },
-    { name: "Boteco do João", rating: 5, image: "images/bar2.jpg" },
-    { name: "Bar da Praça", rating: 3, image: "images/bar3.jpg" },
-    { name: "Happy Hour", rating: 4, image: "images/bar4.jpg" },
+   
 ];
 
 // Função para exibir o ranking

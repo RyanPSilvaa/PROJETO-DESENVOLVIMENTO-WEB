@@ -128,7 +128,7 @@ section.tour {
 
 .home-text h2{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -249,6 +249,11 @@ header.sticky {
     width: 400px;
     height: 600px;
     border-radius: 10px;
+}
+
+.holiday-img img:hover{
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 .holiday-text h5{
