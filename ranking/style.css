@@ -8,7 +8,11 @@
 /* Corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(../img/IMG-BACKGROUND.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: #333;
 }
 
@@ -45,6 +49,7 @@ header nav ul li a:hover {
 }
 
 header .logo h1 {
+    color: #45a049;
     margin: 0;
 }
 
@@ -53,6 +58,21 @@ main {
     padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
+}
+#h2-1{
+    color: white;
+}
+
+#h2-1:hover{
+    color: #45a049;
+}
+
+#h2-2{
+    color: #45a049;
+}
+
+#h2-2:hover{
+    color: #ff9800;
 }
 
 /* Seção do ranking de bares */
@@ -73,6 +93,12 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+}
+
+.bar-item:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    color: #45a049;
 }
 
 .bar-item img {
