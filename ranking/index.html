@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog de Ranking de Bares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ranking dos Melhores Bares</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bar-ranking">
+            <h2>Top 5 Bares</h2>
+            <div class="bar-list">
+                <!-- Bares e rankings serão gerados via JS -->
+            </div>
+        </section>
+
+        <section class="add-bar">
+            <h2>Adicione um bar ao ranking</h2>
+            <form id="bar-form">
+                <input type="text" id="bar-name" placeholder="Nome do bar" required>
+                <input type="number" id="bar-rating" placeholder="Avaliação (1 a 5)" min="1" max="5" required>
+                <button type="submit">Adicionar Bar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ranking dos Melhores Bares. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
