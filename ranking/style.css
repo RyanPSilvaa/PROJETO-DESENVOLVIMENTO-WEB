@@ -8,7 +8,7 @@
 /* Corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(../img/IMG-BACKGROUND.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../img/IMG-BACKGROUND.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,7 +18,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
@@ -50,6 +50,10 @@ header nav ul li a:hover {
 
 header .logo h1 {
     color: #45a049;
+    margin: 0;
+}
+header .logo h1:hover{
+    color: white;
     margin: 0;
 }
 
@@ -97,8 +101,8 @@ main {
 
 .bar-item:hover{
     transform: scale(1.1);
-    transition: .3s;
-    color: #45a049;
+    scale: 1s;
+    cursor: pointer;
 }
 
 .bar-item img {
@@ -157,11 +161,15 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     color: white;
     text-align: center;
     padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer:hover{
+    color: #45a049;
 }

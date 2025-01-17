@@ -1,7 +1,37 @@
 // Dados iniciais dos bares
 const bars = [
-   
+    {
+        name: "Bar do João",
+        location: "Rua das Flores, 123",
+        rating: 4.5,
+        specialties: ["Chopp gelado", "Petiscos variados"],
+    },
+    {
+        name: "Boteco do Zé",
+        location: "Av. Central, 456",
+        rating: 4.8,
+        specialties: ["Caipirinha", "Caldinho de feijão"],
+    },
+    {
+        name: "Cervejaria Artesanal Manaus",
+        location: "Rua Amazonas, 789",
+        rating: 4.7,
+        specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
+    },
+    {
+        name: "Cervejaria Artesanal Manaus",
+        location: "Rua Amazonas, 789",
+        rating: 4.7,
+        specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
+    },
+    {
+        name: "Cervejaria Artesanal Manaus",
+        location: "Rua Amazonas, 789",
+        rating: 4.7,
+        specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
+    },
 ];
+
 
 // Função para exibir o ranking
 function displayBars() {
