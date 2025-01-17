@@ -42,7 +42,7 @@ body{
 
 .form-image img {
     max-width: 100%;
-    height: auto;
+    height: 800px;
     object-fit: cover;
 }
 
@@ -52,6 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form h1 {
@@ -82,9 +83,6 @@ form h1 {
     transition: border-color 0.3s;
 }
 
-.input-group input:focus {
-    border-color: #007BFF;
-}
 
 .gender-group {
     margin-bottom: 1rem;
@@ -134,8 +132,9 @@ button:hover {
         flex-direction: column;
     }
 
-    .form-image {
+    .form-image img {
         height: 200px;
+        width: 733px;
     }
 
     .form {
