@@ -1,92 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Formulário Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-img">
-            <img src="imagens/cadastro-imagem.png" alt="imagem-cadastro">
+    <div class="form-container">
+        <div class="form-image">
+            
         </div>
-
-        <div class="form">
-              <form action="#">
-                <div class="form-header">
-                    <div class="titulo">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                    <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite o seu primeiro nome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite o seu Sobrenome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite o seu e-mail" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="telefone">Telefone</label>
-                        <input id="telefone" type="number" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite a sua senha" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="confirm-password">Confirme a sua senha</label>
-                        <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirme a sua senha" required>
-                    </div>
-
+        <form action="#" method="POST" class="form">
+            <h1>Cadastro</h1>
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmar-senha">Confirmar Senha</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="input-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <div class="gender-group">
+                <h4>Gênero</h4>
+                <div class="gender-input">
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
                 </div>
                 <div class="gender-input">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="fem" name="gender">
-                            <label for="fem">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="masc" name="gender">
-                            <label for="masc">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="others" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input type="radio" id="none" name="gender">
-                            <label for="none">Prefiro não dizer</label>
-                        </div>
-                    </div>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
                 </div>
-
-                <div class="continue-button">
-                    <button><a href="../index.html">Continuar</a></button>
+                <div class="gender-input">
+                    <input type="radio" id="outro" name="genero" value="outro">
+                    <label for="outro">Outro</label>
                 </div>
-              </form>  
-        </div>
+            </div>
+            <div class="input-group">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
