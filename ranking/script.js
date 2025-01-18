@@ -1,31 +1,31 @@
 // Dados iniciais dos bares
 const bars = [
     {
-        name: "Bar do João",
+        name: "Pub Bela Vista",
         location: "Rua das Flores, 123",
         rating: 4.5,
         specialties: ["Chopp gelado", "Petiscos variados"],
     },
     {
-        name: "Boteco do Zé",
+        name: "Resenha Beer",
         location: "Av. Central, 456",
         rating: 4.8,
         specialties: ["Caipirinha", "Caldinho de feijão"],
     },
     {
-        name: "Cervejaria Artesanal Manaus",
+        name: "Bar da Vilma",
         location: "Rua Amazonas, 789",
         rating: 4.7,
         specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
     },
     {
-        name: "Cervejaria Artesanal Manaus",
+        name: "Bar do Juba",
         location: "Rua Amazonas, 789",
         rating: 4.7,
         specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
     },
     {
-        name: "Cervejaria Artesanal Manaus",
+        name: "Bar Século XX",
         location: "Rua Amazonas, 789",
         rating: 4.7,
         specialties: ["Cervejas artesanais", "Hambúrguer gourmet"],
