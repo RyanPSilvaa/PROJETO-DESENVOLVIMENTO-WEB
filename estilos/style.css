@@ -1,405 +1,426 @@
+/* Define o conjunto de caracteres utilizado pelo arquivo CSS */
 @charset "UTF-8";
 
+/* Define as propriedades globais para todos os elementos */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "Open Sans", sans-serif;
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    box-sizing: border-box; /* Garante que o padding e a borda não aumentem o tamanho do elemento */
+    list-style: none; /* Remove os pontos de lista */
+    text-decoration: none; /* Remove o sublinhado de links */
+    border: none; /* Remove bordas */
+    outline: none; /* Remove contornos de foco */
+    scroll-behavior: smooth; /* Define um comportamento suave para rolagem */
+    font-family: "Open Sans", sans-serif; /* Define a fonte padrão */
 }
 
+/* Definição de variáveis para reutilização de cores e fontes */
 :root {
-    --text-color: white;
-    --bg-color: rgb(0, 0, 0);
-    --p-color: white;
-    --cor-003: #c44e00;
-    --cor-004: rgb(20, 187, 20);
-    --main-color: rgb(0, 126, 0);
+    --text-color: white; /* Cor do texto */
+    --bg-color: rgb(0, 0, 0); /* Cor do fundo */
+    --p-color: white; /* Cor para os parágrafos */
+    --cor-003: #c44e00; /* Cor personalizada */
+    --cor-004: rgb(20, 187, 20); /* Cor personalizada */
+    --main-color: rgb(0, 126, 0); /* Cor principal */
 
-    --h1-font: 6rem;
-    --h2-font: 3rem;
-    --p-font: 1rem;
+    --h1-font: 6rem; /* Tamanho da fonte para h1 */
+    --h2-font: 3rem; /* Tamanho da fonte para h2 */
+    --p-font: 1rem; /* Tamanho da fonte para parágrafos */
 }
 
+/* Estilos gerais para o corpo */
 body {
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: var(--text-color); /* Aplica a cor do texto */
+    background-color: var(--bg-color); /* Aplica a cor do fundo */
 }
 
+/* Estilos para o cabeçalho */
 header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
-    background: transparent;
-    padding: 27px 17%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .50s ease;
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Define a posição no topo */
+    right: 0; /* Define a posição à direita */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    width: 100%; /* Largura total */
+    background: transparent; /* Fundo transparente */
+    padding: 27px 17%; /* Padding personalizado */
+    display: flex; /* Utiliza o Flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaço entre os itens */
+    transition: all .50s ease; /* Transição suave para mudanças */
 }
 
+/* Estilo para o logotipo */
 .logo {
-    font-size: 33px;
-    color: var(--text-color);
-    font-weight: 700;
+    font-size: 33px; /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    font-weight: 700; /* Peso da fonte */
 }
 
+/* Estilo para o span dentro do logo */
 span {
-    color: var(--cor-003);
+    color: var(--cor-003); /* Aplica a cor personalizada */
 }
 
+/* Estilos para a barra de navegação */
 .navbar {
-    display: flex;
+    display: flex; /* Flexbox para a navbar */
 }
 
 .navbar a {
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    margin: 15px;
-    transition: all .50s ease;
+    color: var(--text-color); /* Cor do texto */
+    font-size: var(--p-font); /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    margin: 15px; /* Margem entre os links */
+    transition: all .50s ease; /* Transição suave */
 }
 
 .navbar a:hover {
-    color: var(--main-color);
+    color: var(--main-color); /* Muda a cor ao passar o mouse */
 }
 
+/* Estilos para a parte direita do cabeçalho */
 .h-right {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox para os itens à direita */
+    align-items: center; /* Alinha verticalmente */
 }
 
 .h-right a:first-child {
-    color: var(--text-color);
-    font-size: var(--p-font);
-    margin-right: 20px;
+    color: var(--text-color); /* Cor do primeiro link */
+    font-size: var(--p-font); /* Tamanho da fonte */
+    margin-right: 20px; /* Margem à direita */
 }
 
+/* Estilos para links à direita */
 .h-right a {
-    vertical-align: middle;
-    font-size: 20px;
-    color: var(--text-color);
-    margin-right: 18px;
-    margin-left: 5px;
-    transition: all .50s ease;
+    vertical-align: middle; /* Alinha verticalmente */
+    font-size: 20px; /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    margin-right: 18px; /* Margem à direita */
+    margin-left: 5px; /* Margem à esquerda */
+    transition: all .50s ease; /* Transição suave */
 }
 
 .h-right a:hover {
-    color: var(--main-color);
-    transform: translateY(-5px);
+    color: var(--main-color); /* Cor ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de translação para cima */
 }
 
+/* Estilos para o ícone de menu (invisível por padrão) */
 #menu-icon {
-    color: var(--text-color);
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
+    color: var(--text-color); /* Cor do ícone */
+    font-size: 30px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de pointer */
+    z-index: 10001; /* Garante que o ícone fique acima de outros elementos */
+    display: none; /* Inicialmente invisível */
 }
 
+/* Estilos gerais para seções */
 section {
-    padding: 50px 17% 50px;
+    padding: 50px 17% 50px; /* Padding para as seções */
 }
 
+/* Estilo específico para a seção 'tour' */
 section.tour {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alinha os itens na coluna */
+    align-items: center; /* Alinha no centro */
+    justify-content: center; /* Justifica no centro */
 }
 
+/* Estilo para a seção home */
 .home {
-    position: sticky;
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.541)), url(../img/IMG-BACKGROUND.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    position: sticky; /* Fixa a seção enquanto rola */
+    height: 100vh; /* Altura de 100% da tela */
+    width: 100%; /* Largura total */
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.541)), url(../img/IMG-BACKGROUND.jpg); /* Imagem de fundo com gradiente */
+    background-size: cover; /* Cobre a tela */
+    background-position: center bottom; /* Centraliza a imagem no fundo */
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha no centro */
+    justify-content: flex-start; /* Justifica à esquerda */
 }
 
-.home-text h2{
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    color: white;
+/* Estilos para o texto dentro da home */
+.home-text h2 {
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 800; /* Peso da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+    text-transform: uppercase; /* Maiúsculas */
+    letter-spacing: 6px; /* Espaçamento entre letras */
+    color: white; /* Cor do texto */
 }
 
 .home-text h1 {
-    font-size: var(--h1-font);
-    color: var(--cor-004);
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: var(--h1-font); /* Tamanho da fonte do h1 */
+    color: var(--cor-004); /* Cor personalizada */
+    font-weight: 800; /* Peso da fonte */
+    line-height: 1.2; /* Altura da linha */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
 .home-text p {
-    font-size: var(--p-font);
-    font-weight: 500;
-    line-height: 30px;
-    color:  var(--p-color);
-    margin-bottom: 35px;
+    font-size: var(--p-font); /* Tamanho da fonte do parágrafo */
+    font-weight: 500; /* Peso da fonte */
+    line-height: 30px; /* Altura da linha */
+    color: var(--p-color); /* Cor personalizada */
+    margin-bottom: 35px; /* Margem inferior */
 }
 
-.btn {
-    display: inline-block;
-    padding: 13px 40px;
-    background: var(--main-color);
-    color: var(--p-color);
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.575);
-    transition: all .50s ease;
-    cursor: pointer;
+/* Estilos para os botões */
+.btn, .btn-002 {
+    display: inline-block; /* Exibição inline com bloco */
+    padding: 13px 40px; /* Padding */
+    background: var(--main-color); /* Cor de fundo */
+    color: var(--p-color); /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.575); /* Sombra do botão */
+    transition: all .50s ease; /* Transição suave */
+    cursor: pointer; /* Cursor de pointer */
 }
 
-.btn:hover {
-    transform: translateY(15px 15px 15px 15px);
-    border: 2px solid rgb(123, 255, 0);
-    background: transparent;
-    color: rgb(123, 255, 0);
+.btn:hover, .btn-002:hover {
+    transform: translateY(15px); /* Efeito de movimento para baixo */
+    border: 2px solid rgb(123, 255, 0); /* Borda ao passar o mouse */
+    background: transparent; /* Fundo transparente */
+    color: rgb(123, 255, 0); /* Cor do texto ao passar o mouse */
 }
 
-.btn-002 {
-    display: inline-block;
-    padding: 13px 40px;
-    background: var(--main-color);
-    color: var(--p-color);
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.575);
-    transition: all .50s ease;
-    cursor: pointer;
-}
-
-.btn-002:hover {
-    transform: translateY(15px 15px 15px 15px);
-    border: 2px solid rgb(123, 255, 0);
-    background: transparent;
-    color: rgb(123, 255, 0);
-}
-
+/* Estilos para o cabeçalho sticky */
 header.sticky {
-    padding: 8px 17%;
-    background: transparent;
-    backdrop-filter: blur(35px);
+    padding: 8px 17%; /* Padding ajustado */
+    background: transparent; /* Fundo transparente */
+    backdrop-filter: blur(35px); /* Desfoque de fundo */
 }
+
+/* Estilos para a imagem em círculo */
 .row-img {
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+    overflow: hidden; /* Esconde o que ultrapassar */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    margin-bottom: 20px; /* Margem inferior */
+    border-radius: 50%; /* Arredonda as bordas */
+    cursor: pointer; /* Cursor de pointer */
 }
 
 .row-img img {
-    width: 100%;
-    display: block;
-    transition: transform(0.7s);
+    width: 100%; /* Largura total */
+    display: block; /* Remove o espaço abaixo da imagem */
+    transition: transform(0.7s); /* Transição suave para o efeito de transformação */
 }
 
 .row-img img:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Aumenta o tamanho da imagem ao passar o mouse */
 }
 
+/* Estilos para a avaliação de estrelas */
 .rating .star {
     color: gold; /* Cor das estrelas */
     font-size: 30px; /* Tamanho das estrelas */
     margin-right: 5px; /* Espaçamento entre as estrelas */
 }
 
+/* Estilos para o conteúdo das características */
 .feature-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    column-gap: 200px;
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite a quebra de linha */
+    align-items: center; /* Alinha os itens no centro */
+    text-align: center; /* Alinha o texto no centro */
+    justify-content: center; /* Justifica no centro */
+    column-gap: 200px; /* Espaçamento entre colunas */
 }
 
+/* Estilos para os títulos dentro de feature-content */
 .feature-content h4 {
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all .50s ease;
+    font-size: 17px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    cursor: pointer; /* Cursor de pointer */
+    transition: all .50s ease; /* Transição suave */
 }
 
 .feature-content h4:hover {
-    color: var(--main-color);
+    color: var(--main-color); /* Muda a cor ao passar o mouse */
 }
 
+/* Estilos para a seção holiday */
 .holiday {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: justify;
-    gap: 9rem;
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Direção das colunas */
+    align-items: center; /* Alinha no centro */
+    text-align: justify; /* Alinha o texto justificado */
+    gap: 9rem; /* Espaçamento entre os itens */
 }
 
+/* Estilos para a imagem da seção holiday */
 .holiday-img img {
     display: flex;
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
+    width: 400px; /* Largura da imagem */
+    height: 600px; /* Altura da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
-.holiday-img img:hover{
-    transform: scale(1.1);
-    transition: .3s;
+.holiday-img img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    transition: .3s; /* Transição suave */
 }
 
-.holiday-text h5{
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--cor-003);
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
+/* Estilos para o texto dentro da seção holiday */
+.holiday-text h5 {
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: var(--cor-003); /* Cor personalizada */
+    text-transform: uppercase; /* Maiúsculas */
+    letter-spacing: 6px; /* Espaçamento entre letras */
+    margin-bottom: 20px; /* Margem inferior */
 }
+
+/* Estilos para o título e parágrafo dentro da seção holiday */
 .holiday-text h2 {
-    font-size: var(--h2-font);
-    color: var(--main-color);
-    text-align: left;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 25px;
+    font-size: var(--h2-font); /* Tamanho do título */
+    color: var(--main-color); /* Cor personalizada */
+    text-align: left; /* Alinha à esquerda */
+    font-weight: 800; /* Peso da fonte */
+    line-height: 1.2; /* Altura da linha */
+    margin-bottom: 25px; /* Margem inferior */
 }
 
 .holiday-text p {
-    font-size: var(--p-font);
-    font-weight: 500;
-    line-height: 30px;
-    color:  var(--p-color);
-    margin-bottom: 35px;
+    font-size: var(--p-font); /* Tamanho do parágrafo */
+    font-weight: 500; /* Peso da fonte */
+    line-height: 30px; /* Altura da linha */
+    color: var(--p-color); /* Cor do texto */
+    margin-bottom: 35px; /* Margem inferior */
 }
 
+/* Estilos para centralizar o texto */
 .center-text {
-    text-align: center;
+    text-align: center; /* Alinha o texto no centro */
 }
 
+/* Estilos para o título centralizado */
 .center-text h2 {
-    font-size: var(--h2-font);
-    color: var(--cor-004);
-    font-weight: 800;
+    font-size: var(--h2-font); /* Tamanho do título */
+    color: var(--cor-004); /* Cor personalizada */
+    font-weight: 800; /* Peso da fonte */
 }
 
+/* Estilos para o texto do box */
 .box h6 {
-    position: absolute;
-    left: 25px;
-    bottom: 95px;
-    font-size: 18px;
-    font-weight: 500;
+    position: absolute; /* Posiciona o texto dentro do box */
+    left: 25px; /* Distância da esquerda */
+    bottom: 95px; /* Distância da parte inferior */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
 }
 
-.newsletter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}   
+/* Estilos para a seção de newsletter */
+.newsletter {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha no centro */
+    justify-content: space-between; /* Justifica com espaçamento entre os itens */
+    gap: 2rem; /* Espaçamento entre os itens */
+}
 
+/* Estilos para o título da newsletter */
 .newsletter-text h2 {
-    font-size: var(--h2-font);
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: var(--main-color);
+    font-size: var(--h2-font); /* Tamanho do título */
+    font-weight: 800; /* Peso da fonte */
+    margin-bottom: 15px; /* Margem inferior */
+    color: var(--main-color); /* Cor personalizada */
 }
 
+/* Estilos para o texto da newsletter */
 .newsletter-text p {
-    font-size: var(--p-font);
-    font-weight: 500;
-    color: white;
+    font-size: var(--p-font); /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: white; /* Cor do texto */
 }
 
+/* Estilos para o formulário da newsletter */
 .newsletter-content form {
-     display: grid;
-     grid-template-columns: 1fr 0.4fr;
-     gap: 1rem;
+    display: grid; /* Exibição em grid */
+    grid-template-columns: 1fr 0.4fr; /* Define o layout do grid */
+    gap: 1rem; /* Espaçamento entre as colunas */
 }
 
+/* Estilos para o primeiro campo de input da newsletter */
 .newsletter form input:first-child {
-    padding: 15px;
-    background: #202020;
-    font-size: var(--p-font);
-    color: var(--text-color);
-    border-radius: 5px;
+    padding: 15px; /* Padding */
+    background: #202020; /* Cor de fundo */
+    font-size: var(--p-font); /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilos para o rodapé */
 .footer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 2rem; /* Espaçamento entre os itens */
 }
 
+/* Estilos para as caixas dentro do rodapé */
 .footer-box {
-    display: flex;
-    flex-direction: column;
-
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alinha os itens na coluna */
 }
 
+/* Estilos para o título da caixa do rodapé */
 .footer-box h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    margin-bottom: 15px; /* Margem inferior */
 }
 
+/* Estilos para os links dentro do rodapé */
 .footer-box a {
-    color: var(--p-color);
-    margin-bottom: 0.8rem;
-    transition: all .50s ease;
+    color: var(--p-color); /* Cor do texto */
+    margin-bottom: 0.8rem; /* Margem inferior */
+    transition: all .50s ease; /* Transição suave */
 }
 
 .footer-box a:hover {
-    transform: translate(-5px);
-    color: var(--p-color);
+    transform: translate(-5px); /* Efeito de movimento para a esquerda */
+    color: var(--p-color); /* Cor ao passar o mouse */
 }
 
-.social a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 45px;
-    background: #202020;
-    color: var(--text-color);
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 8px;
-    transition: transform 0.6s;
+/* Estilos para as redes sociais */
+.social a {
+    display: inline-flex; /* Exibição inline com flexbox */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: center; /* Justifica no centro */
+    height: 45px; /* Altura do ícone */
+    width: 45px; /* Largura do ícone */
+    background: #202020; /* Cor de fundo */
+    color: var(--text-color); /* Cor do texto */
+    border-radius: 50%; /* Arredonda os ícones */
+    font-size: 20px; /* Tamanho da fonte */
+    margin-right: 8px; /* Margem à direita */
+    transition: transform 0.6s; /* Transição suave */
 }
 
 .social a:hover {
-    background: var(--main-color);
-    color: var(--bg-color);
-    transform: translate(-4px);
+    background: var(--main-color); /* Cor de fundo ao passar o mouse */
+    color: var(--bg-color); /* Cor do texto */
+    transform: translate(-4px); /* Efeito de movimento para a esquerda */
 }
 
+/* Estilos para o copyright */
 .copyright p {
-    text-align: center;
-    padding: 20px;
-    color: rgb(0, 255, 34);
-    font-size: 15px;
+    text-align: center; /* Alinha o texto no centro */
+    padding: 20px; /* Padding */
+    color: rgb(0, 255, 34); /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
 }
+
+/* Estilos para o link dentro do copyright */
 .copyright a {
-    color: rgb(0, 255, 34);
-    text-decoration: none;
+    color: rgb(0, 255, 34); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
 .copyright a:hover {
-    color: rgb(96, 241, 96);
+    color: rgb(96, 241, 96); /* Cor ao passar o mouse */
 }
