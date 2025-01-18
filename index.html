@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
     <title>Cadê o meu bar?</title>
+
+    <!-- Links para estilos CSS -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/style-cookie.css">
     <link rel="stylesheet" href="estilos/style-mobile.css">
     <link rel="stylesheet" href="estilos/style-tablet.css">
+
+    <!-- Bibliotecas de ícones externos -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap"
-    rel="stylesheet">
+
+    <!-- Fonte personalizada do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap" rel="stylesheet">
+
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="favicon/android-chrome-512x512.png" type="image/x-icon">
-  
 </head>
 <body>
+    <!-- Cabeçalho do site com menu de navegação -->
     <header>
+        <!-- Logo do site -->
         <a href="#" class="logo">Dev<span>Steam</span></a>
 
+        <!-- Menu de navegação -->
         <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Informações</a></li>
@@ -26,14 +37,18 @@
             <li><a href="#">Entre em Contato</a></li>
         </ul>
 
+        <!-- Ícones e links do cabeçalho -->
         <div class="h-right">
             <a href="#">Siga a Página</a>
             <a href="#"><i class="ri-instagram-fill"></i></a>
             <a href="#"><i class="ri-twitter-x-fill"></i></a>
             <a href="#"><i class="ri-github-fill"></i></a>
+            <!-- Ícone de menu para dispositivos móveis -->
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
+
+    <!-- Seção inicial com texto de boas-vindas -->
     <section class="home">
         <div class="home-text">
             <h2>Vamos</h2>
@@ -42,6 +57,7 @@
                 por ser a terra da pedra pintada, os moradores procuram os melhores 
                 bares para tomarem aquela gelada!.</p>
 
+            <!-- Botões de navegação para cadastro, login e ranquear bar -->
             <a href="./pagina_cadastro/cadastro.html" class="btn" target="_blank"> Cadastre-se </a>
             <a href="./pagina_login/login.html" class="btn-002" target="_blank">Fazer Login</a>
             <a href="./ranking/index.html" class="btn-002" target="_blank">Ranquear Bar</a>
@@ -49,8 +65,10 @@
         </div>
     </section>
 
+    <!-- Seção de destaque com imagens e descrições -->
     <section class="feature">
         <div class="feature-content">
+            <!-- Repetição de blocos de imagens com título "Bar" -->
             <div class="row">
                 <div class="row-img">
                     <img src="img/IMG1.jpg" alt="imagem001">
@@ -81,6 +99,7 @@
         </div>
     </section>
 
+    <!-- Seções com informações detalhadas sobre os bares -->
     <section class="holiday">
         <div class="holiday-img">
             <img src="img/IMG1 (2).jpg" alt="imagem001.1">
@@ -98,6 +117,7 @@
         </div>
     </section>
 
+    <!-- Repetição de estrutura de seção "holiday" -->
     <section class="holiday">
         <div class="holiday-text">
             <h5>Bar 2</h5>
@@ -116,69 +136,18 @@
 
     </section>
 
-    <section class="holiday">
-        <div class="holiday-img">
-            <img src="img/IMG1 (2).jpg" alt="imagem001.1">
-        </div>
-
-        <div class="holiday-text">
-            <h5>Bar 1</h5>
-            <h2>Conheça o Bar Tal Tal</h2>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <a href="leia_mais.html" class="btn"  target="_blank"> Leia mais</a>
-        </div>
-    </section>
-
-    <section class="holiday">
-        <div class="holiday-text">
-            <h5>Bar 2</h5>
-            <h2>Conheça o Bar Tal Tal</h2>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <a href="leia_mais.html" class="btn"  target="_blank"> Leia mais</a>
-        </div>
-
-        <div class="holiday-img"> 
-            <img src="img/IMG1 (2).jpg" alt="imagem001.1">
-        </div>
-
-    </section>
-
-    <section class="holiday">
-        <div class="holiday-img">
-            <img src="img/IMG1 (2).jpg" alt="imagem001.1">
-        </div>
-
-        <div class="holiday-text">
-            <h5>Bar 1</h5>
-            <h2>Conheça o Bar Tal Tal</h2>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <p>Info do bar</p>
-            <a href="leia_mais.html" class="btn"  target="_blank"> Leia mais</a>
-        </div>
-    </section>
-       
+    <!-- Seção de newsletter -->
     <section class="newsletter">
         <div class="newsletter-content">
             <div class="newsletter-text">
                 <h2>Pronto para Explorar ?</h2>
                 <h3>Vamos conhecer e rankear esses bares!</h3>
             </div>
-            
         </div>
-            <a href="./ranking/index.html" class="btn-002" target="_blank">Começar</a>
+        <a href="./ranking/index.html" class="btn-002" target="_blank">Começar</a>
     </section>
 
+    <!-- Rodapé com links úteis e redes sociais -->
     <section class="footer">
         <div class="footer-box">
             <h3>Serviços</h3>
@@ -211,12 +180,14 @@
                 <a href="#"><i class="ri-github-fill"></i></a>
             </div>
         </div>
-
     </section>
-    
+
+    <!-- Aviso de direitos autorais -->
     <div class="copyright">
         <p>© Copyright 2025 por <a href="https://github.com/RyanPSilvaa">Ryan Pereira e Brenno Biase</a></p>
     </div>
+
+    <!-- Mensagem sobre cookies com botão de aceitação -->
     <div class="cookies-msg" id="cookies-msg">
         <div class="cookiestxt">
             <p>Oi! Você acaba de receber um cookie virtual! Este é um lembrete para aproveitar os pequenos momentos da vida, como saborear um cookie quentinho e recém-assado.
@@ -228,6 +199,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Link para o script JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>

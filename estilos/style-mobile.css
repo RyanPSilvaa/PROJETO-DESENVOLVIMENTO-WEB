@@ -1,3 +1,4 @@
+/* Media Query para largura máxima de 1050px */
 @media (max-width: 1050px) {
     .feature-content,
     .holiday,
@@ -25,7 +26,7 @@
     .navbar.open {
         left: 0;
     }
-    
+
     .navbar a {
         font-size: 1.8rem;
         color: #979797;
@@ -33,14 +34,54 @@
     }
 }
 
+/* Media Query para largura máxima de 800px */
 @media (max-width: 800px) {
-    .holiday,
-    .newsletter-content {
+    .home{
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 20px;   
+    }
+    .home h2{
+       padding: 20px; 
+    }
+    .holiday {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    .feature-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 20px;
+        margin-top: 10rem;
+    }
+
+    .feature-content .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 20px;
+          
+    }
+
+    .newsletter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
 }
 
+/* Media Query para largura máxima de 600px */
 @media (max-width: 600px) {
+    .home{
+        padding-top: 10rem;   
+    }
     .feature-content {
         gap: 1.5rem;
     }
@@ -48,10 +89,11 @@
     .box img {
         height: auto;
         width: 100%;
-        margin: 0 auto;k
+        margin: 0 auto;
     }
 }
 
+/* Media Query para largura máxima de 497px */
 @media (max-width: 497px) {
     .home {
         height: 90vh;
@@ -64,6 +106,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+        margin-top: 25rem;
         padding: 0 1rem;
     }
 
