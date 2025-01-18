@@ -216,6 +216,12 @@ header.sticky {
     transform: scale(1.5);
 }
 
+.rating .star {
+    color: gold; /* Cor das estrelas */
+    font-size: 30px; /* Tamanho das estrelas */
+    margin-right: 5px; /* Espaçamento entre as estrelas */
+}
+
 .feature-content {
     display: flex;
     flex-wrap: wrap;
